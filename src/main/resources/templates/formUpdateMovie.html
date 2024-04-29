@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update Movie</title>
+    <link rel="stylesheet" href="/stile.css?version=3" />
+  </head>
+  <body>
+    <h1>Film</h1>
+    <div th:text="${movie.title}">Titolo film</div>
+    </a>
+       <a th:href="@{'/addDirector' + '/' + ${movie.id}}">aggiungi regista</a>
+  </body>
+</html>

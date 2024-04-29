@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Artista</title>
+    <link rel="stylesheet" href="/stile.css?version=2" />
+  </head>
+
+  <body>
+    <div th:if="${artist}">
+	<h1>Artista</h1>
+	<div>Nome: <span th:text="${artist.name}"></span></div>
+	<div>Cognome: <span th:text="${artist.surname}"></span></div>
+	<div>Compleanno: <span th:text="'(' + ${artist.birthday} + ')'"></span></div>
+
+	</div>
+	<div th:unless="${artist}">Non esiste</div>
+  </body>
+</html>
